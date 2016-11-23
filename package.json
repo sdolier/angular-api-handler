@@ -2,10 +2,15 @@
   "name": "angular-api-handler",
   "version": "0.0.1",
   "description": "An angular api handler for intercepting http requests",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sdolier/angular-api-handler.git"
+  },
   "scripts": {
     "ngc": "ngc",
-    "build": "rm -rf aot dist && npm run ngc && node ./scripts/copy-package",
-    "buildDemo": "npm build && node ./scripts/copy-package-to-demo.js",
+    "rollup": "rollup -c",
+    "build": "rm -rf aot dist && npm run ngc && npm run rollup && node ./scripts/copy-package",
     "publishPackage": "npm run build && cd dist && npm publish"
   },
   "dependencies": {
@@ -19,6 +24,7 @@
   "devDependencies": {
     "@types/node": "^6.0.41",
     "copy-dir": "^0.3.0",
+    "rollup": "^0.36.4",
     "typescript": "^2.0.3"
   }
 }
