@@ -1,4 +1,9 @@
 .idea
 node_modules
-demo/app/**/*.js
-demo/app/**/*.js.map
+/demo/app/**/*.js
+/demo/app/**/*.js.map
+/src/**/*.js
+/src/**/*.js.map
+/src/**/*.ngfactory.ts
+/aot
+/dist
