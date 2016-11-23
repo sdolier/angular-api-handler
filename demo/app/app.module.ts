@@ -4,10 +4,20 @@ import { HttpModule }  from '@angular/http';
 
 import { AppComponent }   from './app.component';
 
+import { AngularApiHandlerModule } from 'angular-api-handler';
+
 @NgModule({
-    imports:      [ BrowserModule, HttpModule ],
-    declarations: [ AppComponent ],
-    bootstrap:    [ AppComponent ]
+    imports: [
+        BrowserModule,
+        HttpModule,
+        AngularApiHandlerModule
+    ],
+    declarations: [
+        AppComponent
+    ],
+    bootstrap: [
+        AppComponent
+    ]
 })
 
 export class AppModule { }
