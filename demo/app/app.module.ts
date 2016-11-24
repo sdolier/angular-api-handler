@@ -10,7 +10,7 @@ import { AngularApiHandlerModule } from 'angular-api-handler';
     imports: [
         BrowserModule,
         HttpModule,
-        AngularApiHandlerModule
+        AngularApiHandlerModule.forRoot({})
     ],
     declarations: [
         AppComponent
