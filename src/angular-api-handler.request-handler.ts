@@ -61,7 +61,7 @@ export abstract class AngularApiHandlerRequestHandler {
         });
     }
 
-    protected errorResponse(status: number, message: string) {
+    errorResponse(status: number, message: string) {
         return new ResponseOptions({
             body: {'error': `${message}`},
             headers: new Headers({'Content-Type': 'application/json'}),

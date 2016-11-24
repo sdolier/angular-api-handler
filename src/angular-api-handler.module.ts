@@ -2,20 +2,20 @@ import { Injector, NgModule, ModuleWithProviders, Type } from '@angular/core';
 import { XHRBackend } from '@angular/http';
 
 import { IAngularApiHandlerConfig, AngularApiHandlerConfig } from './angular-api-handler.config';
-import { AngularApiHandlerService } from './angular-api-handler.service'
+import { AngularApiHandlerService, AngularApiHandlerBackendService } from './angular-api-handler.service'
 
-export function angularApiHandlerServiceFactory(
+export function angularApiHandlerBackendServiceFactory(
     injector: Injector,
     service: AngularApiHandlerService,
     config: AngularApiHandlerConfig
 ): XHRBackend {
-    let backend: any = new AngularApiHandlerService(injector, service, config);
+    let backend: any = new AngularApiHandlerBackendService(injector, service, config);
     return (<XHRBackend>backend);
 }
 
 @NgModule({
     providers: [ { provide: XHRBackend,
-        useFactory: angularApiHandlerServiceFactory,
+        useFactory: angularApiHandlerBackendServiceFactory,
         deps: [Injector, AngularApiHandlerService, AngularApiHandlerConfig]} ]
 })
 export class AngularApiHandlerModule {
@@ -25,11 +25,11 @@ export class AngularApiHandlerModule {
      *
      * @returns {{ngModule: AngularApiHandlerModule, providers: Array}}
      */
-    static forRoot(service: Type<AngularApiHandlerService>, config: IAngularApiHandlerConfig) : ModuleWithProviders {
+    static forRoot(service: Type<AngularApiHandlerService>, config?: IAngularApiHandlerConfig) : ModuleWithProviders {
         return {
             ngModule: AngularApiHandlerModule,
             providers: [
-                { provide: AngularApiHandlerService, useValue: service },
+                { provide: AngularApiHandlerService, useClass: service },
                 { provide: AngularApiHandlerConfig, useValue: config }
             ]
         };
