@@ -9,3 +9,5 @@ if (! packageJson) {
 delete packageJson.devDependencies;
 
 fs.writeFile('./dist/package.json', JSON.stringify(packageJson, null, 2));
+
+fs.createReadStream('README.md').pipe(fs.createWriteStream('dist/README.md'));
