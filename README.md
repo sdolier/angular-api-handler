@@ -2,4 +2,7 @@
 
 Handle API requests through the implementation of request handlers.
 
-Ideal for mocking API responses during development and testing.
+Ideal for:
+- mocking API responses during development and testing
+- transforming api requests/responses
+- caching API responses
