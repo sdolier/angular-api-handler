@@ -18,5 +18,9 @@ export class AppComponent {
             .then((response) => {
                 this.message = response.json().message;
             })
+            .catch((error) => {
+                console.log("error calling api/hello.json");
+                console.log(error);
+            })
     }
 }

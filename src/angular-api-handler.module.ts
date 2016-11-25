@@ -25,7 +25,7 @@ export class AngularApiHandlerModule {
      *
      * @returns {{ngModule: AngularApiHandlerModule, providers: Array}}
      */
-    static forRoot(service: Type<AngularApiHandlerService>, config?: IAngularApiHandlerConfig) : ModuleWithProviders {
+    static forRoot(service: Type<AngularApiHandlerService>, config?: AngularApiHandlerConfig) : ModuleWithProviders {
         return {
             ngModule: AngularApiHandlerModule,
             providers: [

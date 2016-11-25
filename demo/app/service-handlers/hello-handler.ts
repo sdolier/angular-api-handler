@@ -11,6 +11,11 @@ export class HelloServiceHandler extends AngularApiHandlerRequestHandler {
     ];
 
     get(req: Request, index: number): ResponseOptions {
-        return this.successResponse({ message: "Hello Mock API Handler"});
+        let responseBody = { message: "Hello from mock API Handler"};
+
+        console.log('mocking response for ' + req.url);
+        console.log(responseBody);
+
+        return this.successResponse(responseBody);
     }
 }

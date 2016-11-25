@@ -14,7 +14,7 @@ export interface IAngularApiHandlerConfig {
 
 @Injectable()
 export class AngularApiHandlerConfig implements IAngularApiHandlerConfig {
-    constructor(config: AngularApiHandlerConfig = {}) {
+    constructor(config: IAngularApiHandlerConfig = {}) {
         // Specify default configuration options
         Object.assign(
             this,

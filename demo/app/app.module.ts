@@ -4,14 +4,14 @@ import { HttpModule }  from '@angular/http';
 
 import { AppComponent }   from './app.component';
 
-import { AngularApiHandlerModule } from 'angular-api-handler';
+import { AngularApiHandlerModule, AngularApiHandlerConfig } from 'angular-api-handler';
 import { AngularApiHandlersService } from './angular-api-handler-service';
 
 @NgModule({
     imports: [
         BrowserModule,
         HttpModule,
-        AngularApiHandlerModule.forRoot(AngularApiHandlersService, {})
+        AngularApiHandlerModule.forRoot(AngularApiHandlersService, new AngularApiHandlerConfig({ enabled: true }))
     ],
     declarations: [
         AppComponent

@@ -3,17 +3,33 @@ import { Headers, Request, ResponseOptions } from '@angular/http';
 
 import { STATUS } from './http-status-codes';
 
+/**
+ * Base class for implementing a request handler
+ */
 export abstract class AngularApiHandlerRequestHandler {
 
+    /**
+     * default response headers
+     *
+     * @type {Headers}
+     */
     protected headers: Headers = new Headers({ 'Content-Type': 'application/json' });
 
+    /**
+     * URL pattern match for selecting this handler
+     */
     abstract matchingUrlsRegex: [{ url: string, data?: any }];
 
-    private blockHandler: boolean;
+    /**
+     * enable this individual handler
+     */
+    private enabled;
 
-    constructor(blockHandler: boolean = false) {
-        this.blockHandler = blockHandler;
+    constructor(enabled: boolean = true) {
+        this.enabled = enabled;
     };
+
+    //////// request handlers ////////
 
     get(req: Request, index: number): ResponseOptions {
         return this.defaultSuccessReponse(index);
@@ -32,7 +48,7 @@ export abstract class AngularApiHandlerRequestHandler {
     }
 
     isMatching(url: string): number {
-        if (!this.blockHandler) {
+        if (this.enabled) {
             for (let i = 0; i < this.matchingUrlsRegex.length; i++) {
                 if (new RegExp(this.matchingUrlsRegex[i].url).test(url)) {
                     return i;
