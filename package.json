@@ -3,6 +3,8 @@
   "version": "0.0.1",
   "description": "An angular api handler for intercepting http requests",
   "license": "MIT",
+  "keywords": ["angular2", "api", "handler", "mock", "cache"],
+  "author": "Stephen D'Olier <stephen@dolier.net>",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/sdolier/angular-api-handler.git"
