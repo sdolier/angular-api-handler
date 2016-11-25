@@ -24,7 +24,6 @@
   },
   "devDependencies": {
     "@types/node": "^6.0.41",
-    "copy-dir": "^0.3.0",
     "rollup": "^0.36.4",
     "typescript": "^2.0.3"
   }
