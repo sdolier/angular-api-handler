@@ -1,6 +1,13 @@
 {
   "name": "angular-api-handler-demo",
+  "description": "demo application for the angular api handler",
+  "license": "MIT",
   "version": "1.0.0",
+  "author": "Stephen D'Olier <stephen@dolier.net>",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sdolier/angular-api-handler.git"
+  },
   "scripts": {
     "start": "tsc && concurrently \"tsc -w\" \"lite-server\" ",
     "lite": "lite-server",
@@ -9,15 +16,15 @@
     "install-module": "npm install angular-api-handler --force"
   },
   "dependencies": {
-    "@angular/common": "~2.2.0",
-    "@angular/compiler": "~2.2.0",
-    "@angular/core": "~2.2.0",
-    "@angular/forms": "~2.2.0",
-    "@angular/http": "~2.2.0",
-    "@angular/platform-browser": "~2.2.0",
-    "@angular/platform-browser-dynamic": "~2.2.0",
-    "@angular/router": "~3.2.0",
-    "@angular/upgrade": "~2.2.0",
+    "@angular/common": "2.2.3",
+    "@angular/compiler": "2.2.3",
+    "@angular/core": "2.2.3",
+    "@angular/forms": "2.2.3",
+    "@angular/http": "2.2.3",
+    "@angular/platform-browser": "2.2.3",
+    "@angular/platform-browser-dynamic": "2.2.3",
+    "@angular/router": "3.2.3",
+    "@angular/upgrade": "2.2.3",
     "angular-in-memory-web-api": "~0.1.15",
     "core-js": "^2.4.1",
     "reflect-metadata": "^0.1.8",
