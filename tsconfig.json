@@ -1,25 +1,29 @@
 {
   "compilerOptions": {
-    "module": "es2015",
+    "module": "commonjs",
     "target": "es5",
     "moduleResolution": "node",
     "sourceMap": true,
-    "declaration": true,
     "noImplicitAny": false,
     "experimentalDecorators": true,
-    "lib": ["dom", "es2015"],
-    "outDir": "./dist",
-    "types": [
-      "node"
-    ]
+    "emitDecoratorMetadata": true,
+    "types": []
   },
-  "exclude": [
-    "node_modules",
-    "dist",
-    "scripts",
-    "demo"
+  "filesGlob": [
+    "src/**/*.ts",
+    "typings/**/*.d.ts"
   ],
-  "angularCompilerOptions": {
-    "genDir": "aot"
-  }
+  "files": [
+    "typings/globals/core-js/index.d.ts",
+    "typings/globals/jasmine/index.d.ts",
+    "typings/globals/node/index.d.ts",
+    "typings/index.d.ts",
+    "src/angular-api-handler.config.spec.ts",
+    "src/angular-api-handler.config.ts",
+    "src/angular-api-handler.module.ts",
+    "src/angular-api-handler.request-handler.ts",
+    "src/angular-api-handler.service.ts",
+    "src/http-status-codes.ts",
+    "src/index.ts"
+  ]
 }
