@@ -20,7 +20,7 @@
     "ngc": "ngc -p tsconfig-build.json",
     "rollup": "rollup -c",
     "build": "rm -rf aot dist && npm run ngc && npm run rollup && node ./scripts/copy-package",
-    "test-once": "tsc && karma start karma.conf.js --single-run",
+    "test": "tsc && karma start karma.conf.js --single-run",
     "publishPackage": "npm run build && cd dist && npm publish",
     "postinstall": "typings install",
     "tsconfig-glob": "tsconfig . --indent 2"
