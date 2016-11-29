@@ -1,6 +1,13 @@
 language: node_js
 node_js:
   - "6"
-
+os:
+  - linux
+env:
+  global:
+    - DISPLAY=:99.0
+    - CHROME_BIN=chromium-browser
+install:
+  - npm install
 script:
   - npm test
