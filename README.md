@@ -1,5 +1,7 @@
 # Angular API Handler
 
+[![Build Status][travis-badge]][travis-badge-url]
+
 Handle API requests through the implementation of request handlers.
 
 Ideal for:
