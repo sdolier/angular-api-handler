@@ -1,6 +1,6 @@
 # Angular API Handler
 
-[![Build Status][travis-badge]][travis-badge-url]
+[![Build Status](https://travis-ci.org/sdolier/angular-api-handler.svg?branch=master)](https://travis-ci.org/sdolier/angular-api-handler)
 
 Handle API requests through the implementation of request handlers.
 
