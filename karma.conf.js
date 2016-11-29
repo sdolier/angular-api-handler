@@ -1,7 +1,7 @@
 // #docregion
 module.exports = function(config) {
 
-    config.set({
+    var configuration = {
 
         basePath: '',
 
@@ -27,5 +27,11 @@ module.exports = function(config) {
 
         colors: true,
         browsers: ['Chrome']
-    });
+    };
+
+    if(process.env.TRAVIS){
+        configuration.browsers = ['Chrome_travis_ci'];
+    }
+
+    config.set(configuration);
 };
