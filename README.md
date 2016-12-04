@@ -1,6 +1,7 @@
 # Angular API Handler
 
 [![Build Status](https://travis-ci.org/sdolier/angular-api-handler.svg?branch=master)](https://travis-ci.org/sdolier/angular-api-handler)
+[![peerDependency Status](https://david-dm.org/sdolier/angular-api-handler/peer-status.svg)](https://david-dm.org/sdolier/angular-api-handler?type=peer)
 
 Handle API requests through the implementation of request handlers.
 
