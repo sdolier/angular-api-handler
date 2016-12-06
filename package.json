@@ -24,7 +24,7 @@
     "publishPackage": "npm run build && cd dist && npm publish",
     "postinstall": "typings install",
     "tsconfig-glob": "tsconfig . --indent 2",
-    "coverage-ts": "remap-istanbul -i reports/coverage/json/coverage-final.json -o reports/coverage/html-ts -t html"
+    "coverage-ts": "remap-istanbul -i reports/coverage/json/coverage-final.json -o reports/coverage/html-ts -t html && remap-istanbul -i reports/coverage/json/coverage-final.json -o reports/coverage/json/coverage-remapped.json"
   },
   "peerDependencies": {
     "@angular/core": "^2.0.0",
