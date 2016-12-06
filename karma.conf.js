@@ -65,13 +65,34 @@ module.exports = function(config) {
     // preprocess matching files before serving them to the browser
     // available preprocessors: https://npmjs.org/browse/keyword/karma-preprocessor
     preprocessors: {
+      'src/**/!(*spec).js': 'coverage'
     },
 
 
     // test results reporter to use
     // possible values: 'dots', 'progress'
     // available reporters: https://npmjs.org/browse/keyword/karma-reporter
-    reporters: ['progress'],
+    reporters: ['progress', 'html', 'coverage'],
+
+
+    // HtmlReporter configuration
+    htmlReporter: {
+      // Open this file to see results in browser
+      outputFile: 'reports/unit/tests.html',
+
+      // Optional
+      pageTitle: 'Unit Tests',
+      subPageTitle: __dirname
+    },
+
+
+    coverageReporter: {
+      dir : 'reports/coverage/',
+      reporters: [
+        { type: 'html', subdir: 'html-js' },
+        { type: 'json', subdir: 'json' }
+      ]
+    },
 
 
     // web server port
