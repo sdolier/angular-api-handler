@@ -2,6 +2,7 @@
 
 [![npm version](https://badge.fury.io/js/angular-api-handler.svg)](https://badge.fury.io/js/angular-api-handler)
 [![Build Status](https://travis-ci.org/sdolier/angular-api-handler.svg?branch=master)](https://travis-ci.org/sdolier/angular-api-handler)
+[![codecov](https://codecov.io/gh/sdolier/angular-api-handler/branch/master/graph/badge.svg)](https://codecov.io/gh/sdolier/angular-api-handler)
 [![peerDependency Status](https://david-dm.org/sdolier/angular-api-handler/peer-status.svg)](https://david-dm.org/sdolier/angular-api-handler?type=peer)
 
 Handle API requests through the implementation of request handlers.
