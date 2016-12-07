@@ -23,7 +23,7 @@ export abstract class AngularApiHandlerRequestHandler {
     /**
      * enable this individual handler
      */
-    private enabled;
+    public enabled;
 
     constructor(enabled: boolean = true) {
         this.enabled = enabled;
