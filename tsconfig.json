@@ -21,6 +21,7 @@
     "src/angular-api-handler.config.spec.ts",
     "src/angular-api-handler.config.ts",
     "src/angular-api-handler.module.ts",
+    "src/angular-api-handler.request-handler.spec.ts",
     "src/angular-api-handler.request-handler.ts",
     "src/angular-api-handler.service.ts",
     "src/http-status-codes.ts",

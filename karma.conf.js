@@ -47,6 +47,7 @@ module.exports = function(config) {
       {pattern: 'node_modules/@angular/core/**/*.js', included: false, watched: false},
       {pattern: 'node_modules/@angular/common/**/*.js', included: false, watched: false},
       {pattern: 'node_modules/@angular/compiler/**/*.js', included: false, watched: false},
+      {pattern: 'node_modules/@angular/http/**/*.js', included: false, watched: false},
       {pattern: 'node_modules/@angular/platform-browser/**/*.js', included: false, watched: false},
       {pattern: 'node_modules/@angular/platform-browser-dynamic/**/*.js', included: false, watched: false},
 
