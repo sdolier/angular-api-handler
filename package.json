@@ -1,6 +1,6 @@
 {
   "name": "angular-api-handler",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "An angular api handler for intercepting http requests",
   "license": "MIT",
   "keywords": [
