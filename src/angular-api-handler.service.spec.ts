@@ -54,6 +54,4 @@ describe('service', () => {
     it('should create an instance of AngularApiHandlerBackendService', () => {
         expect(backend instanceof AngularApiHandlerBackendService).toBeTruthy();
     });
-
-    it('')
 });

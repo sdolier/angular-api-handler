@@ -56,7 +56,7 @@
     "rxjs": "5.0.0-beta.12",
     "systemjs": "^0.19.41",
     "tsconfig-glob": "^0.4.3",
-    "typescript": "2.0.3",
+    "typescript": "2.0.10",
     "typings": "1.4.0",
     "zone.js": "0.6.21"
   }
