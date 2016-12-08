@@ -23,6 +23,7 @@
     "src/angular-api-handler.module.ts",
     "src/angular-api-handler.request-handler.spec.ts",
     "src/angular-api-handler.request-handler.ts",
+    "src/angular-api-handler.service.spec.ts",
     "src/angular-api-handler.service.ts",
     "src/http-status-codes.ts",
     "src/index.ts"
